@@ -11,6 +11,6 @@ int main(void)
 	printf("size char %zu\n", sizeof(char));
 	printf("size double %zu\n", sizeof(double));
 	printf("size float %zu\n", sizeof(float));
-
+	printf("sizelong %zu\n", sizeof(long));
 	return (0);
 }
