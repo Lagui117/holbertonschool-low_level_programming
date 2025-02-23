@@ -11,6 +11,8 @@ void print_alphabet_x10(void);
 
 void print_times_table(int n);
 
+int _islower(int c);
+
 #endif 
 
 
