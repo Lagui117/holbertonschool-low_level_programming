@@ -1,8 +1,17 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Déclaration de la fonction _putchar */
+
 int _putchar(char c);
 
-#endif /* MAIN_H */
+
+void print_to_98(int n);
+
+
+void print_alphabet(void);
+
+
+void print_times_table(int n);
+
+#endif 
 
