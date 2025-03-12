@@ -5,7 +5,7 @@
 /**
  * _strlen - Counts the amount of char
  * @str: String
- * 
+ * Return: Length of string
  */
 int _strlen(char *str)
 {
@@ -21,7 +21,7 @@ int _strlen(char *str)
 
 
 /**
- * print_rev 
+ * print_rev - Prints a string, in reverse
  * @str: String
  */
 void print_rev(char *str)
