@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * get_op_func - Sélectionne la fonction correcte à utiliser pour l’opération demandée
+ * get_op_func - Sélectionne la fonction correcte
  * @s: L’opérateur sous forme de chaîne (ex: "+", "-", "*", "/", "%")
  *
  * Return: Un pointeur vers la fonction correspondant à l’opérateur.
