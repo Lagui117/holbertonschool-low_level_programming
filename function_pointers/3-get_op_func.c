@@ -1,4 +1,5 @@
 #include "calc.h"
+#include <string.h>
 
 /**
  * get_op_func - Sélectionne la fonction correcte à utiliser pour l’opération demandée
