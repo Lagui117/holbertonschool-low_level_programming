@@ -1,3 +1,5 @@
+#include "3-calc.h"
+
 /**
  * op_add - Calcule la somme de deux entiers
  * @a: Premier entier
