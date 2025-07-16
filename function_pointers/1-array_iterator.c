@@ -1,0 +1,21 @@
+#include <stddef.h>
+/**
+ * array_iterator - Applique une fonction à chaque élément d'un tableau d'entiers
+ * @array: Le tableau d'entiers
+ * @size: La taille du tableau
+ * @action: Pointeur vers la fonction à appliquer à chaque élément
+ *
+ * Description:
+ * Cette fonction parcourt le tableau et appelle la fonction 'action'
+ * sur chaque élément. Si le tableau ou la fonction est NULL, elle ne fait rien.
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	if (array != NULL && action != NULL)
+		return; 
+
+	for(i = 0;i < size; i++)
+		{
+			 action(array[i]);
+		}
+
