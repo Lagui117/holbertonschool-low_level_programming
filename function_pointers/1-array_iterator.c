@@ -2,14 +2,14 @@
 #include <stddef.h>
 
 /**
- * array_iterator - Applique une fonction à chaque élément d'un tableau d'entiers
+ * array_iterator - Applique une fonction à chaque élément d'un tableau
  * @array: Le tableau d'entiers
  * @size: La taille du tableau
  * @action: Pointeur vers la fonction à appliquer à chaque élément
  *
  * Description:
  * Cette fonction parcourt le tableau et appelle la fonction 'action'
- * sur chaque élément. Si le tableau ou la fonction est NULL, elle ne fait rien.
+ * sur chaque élément
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
