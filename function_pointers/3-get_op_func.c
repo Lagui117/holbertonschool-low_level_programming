@@ -24,7 +24,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 4)
+	while (ops[i].op != NULL)
 	{
 		if (!strcmp(ops[i].op, s))
 			return (ops[i].f);
