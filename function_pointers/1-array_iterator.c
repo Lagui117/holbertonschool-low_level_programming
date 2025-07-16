@@ -8,7 +8,7 @@
  * Description:
  * Cette fonction parcourt le tableau et appelle la fonction 'action'
  * sur chaque élément. Si le tableau ou la fonction est NULL, elle ne fait rien.
- */
+*/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (array != NULL && action != NULL)
@@ -18,4 +18,4 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		{
 			 action(array[i]);
 		}
-
+}
