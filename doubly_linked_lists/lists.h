@@ -5,11 +5,11 @@
 
 /**
  * struct dlistint_s - doubly linked list
- * @n: integer
- * @prev: points to the previous node
- * @next: points to the next node
+ * @n: Integer stored in the node
+ * @prev: Pointer to the previous element of the list
+ * @next: Pointer to the next element of the list
  *
- * Description: node structure for a doubly linked list
+ * Description: Node of a doubly linked list
  */
 typedef struct dlistint_s
 {
@@ -18,19 +18,17 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
-/* === Prototypes === */
-
-/* 0-print_dlistint.c */
+/* Prototypes des fonctions */
 size_t print_dlistint(const dlistint_t *h);
-
-/* 1-dlistint_len.c */
 size_t dlistint_len(const dlistint_t *h);
-
-/* 2-add_dnodeint.c */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
-
-/* 3-add_dnodeint_end.c */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+void free_dlistint(dlistint_t *head);
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+int sum_dlistint(dlistint_t *head);
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
 #endif /* LISTS_H */
+
 
