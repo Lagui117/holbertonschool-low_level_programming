@@ -16,7 +16,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (head == NULL || *head == NULL)
 		return (-1);
 
-	/* Cas spécial : suppression de la tête */
 	if (index == 0)
 	{
 		*head = tmp->next;
@@ -26,20 +25,21 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
-	/* Parcours jusqu’au nœud précédent celui à supprimer */
 	while (tmp != NULL && i < index)
 	{
 		tmp = tmp->next;
 		i++;
 	}
 
-	/* Index invalide */
 	if (tmp == NULL)
 		return (-1);
 
-	/* Déconnexion du nœud */
 	if (tmp->prev)
 		tmp->prev->next = tmp->next;
 	if (tmp->next)
-		tmp->next->prev = tmp-
+		tmp->next->prev = tmp->prev;
+
+	free(tmp);
+	return (1);
+}
 
